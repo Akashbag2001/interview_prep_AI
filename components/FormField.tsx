@@ -17,11 +17,9 @@ const FormField = ({control, name, label, placeholder, type="text"}: FormFieldPr
       <FormItem>
         <FormLabel className="label">{label}</FormLabel>
         <FormControl>
-          <Input placeholder="shadcn" {...field} />
+          <Input className='input' type={type} placeholder={placeholder} {...field} />
         </FormControl>
-        <FormDescription>
-          This is your public display name.
-        </FormDescription>
+       
         <FormMessage />
       </FormItem>
     
